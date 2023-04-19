@@ -6,4 +6,4 @@ before_install:
   - docker build -t alexyokai/deploy-test -f Dockerfile.dev .
 
 script:
-  - docker run alexyokai/deploy-test npm run test
+  - docker run alexyokai/deploy-test npm run test --coverage
